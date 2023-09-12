@@ -17,10 +17,11 @@ nrnivmodl
 
 ## Computational model
 
-The computational model needs to be launched outside from the docker
+The computational model needs to be launched outside from the docker.
+
 Download the necessary packages in the requirements.txt beforehand.
 
-To run a demo of the marmoset model:
+To run the computational model:
 ```
 python MarmosetBG.py
 ```
@@ -28,9 +29,7 @@ python MarmosetBG.py
 ## Launch Gazebo Simulation
 install and compile the [robotology superbuild](https://github.com/robotology/robotology-superbuild) before starting simulation.
 
- To launch the Gazebo iCub simulation,
- first initiate the yarp server  : 
- 
+ To launch the Gazebo iCub simulation, first initiate the yarp server  : 
 ```
 yarpserver
 ```
