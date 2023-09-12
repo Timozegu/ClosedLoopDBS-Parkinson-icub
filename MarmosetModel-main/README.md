@@ -1,8 +1,4 @@
 #  Closed loop DBS computational model implemented on iCub robot
-
-## Citation request
-RANIERI, C. M.; PIMENTEL, J. M. ; ROMANO, M. R. ; ELIAS, L. A. ; ROMERO, R. A. F. ; LONES, M. A. ; ARAUJO, M. F. P. ; VARGAS, PATRICIA A. ; MOIOLI, R. C. . A Data-Driven Biophysical Computational Model of Parkinson’s Disease Based on Marmoset Monkeys. IEEE Access, v. 9, p. 122548-122567, 2021.
-
 ## Docker
 
 To build the Docker container:
