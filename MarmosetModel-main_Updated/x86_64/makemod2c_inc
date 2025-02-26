@@ -1,0 +1,40 @@
+./GP.c: ../GP.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "GP.mod" -o "/home/timozegu/MarmosetBase/MarmosetModel-main/x86_64")
+
+./GP.o: ./GP.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./Izhi2003b.c: ../Izhi2003b.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Izhi2003b.mod" -o "/home/timozegu/MarmosetBase/MarmosetModel-main/x86_64")
+
+./Izhi2003b.o: ./Izhi2003b.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./Str.c: ../Str.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Str.mod" -o "/home/timozegu/MarmosetBase/MarmosetModel-main/x86_64")
+
+./Str.o: ./Str.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./SubTN.c: ../SubTN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SubTN.mod" -o "/home/timozegu/MarmosetBase/MarmosetModel-main/x86_64")
+
+./SubTN.o: ./SubTN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./thalamus.c: ../thalamus.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "thalamus.mod" -o "/home/timozegu/MarmosetBase/MarmosetModel-main/x86_64")
+
+./thalamus.o: ./thalamus.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
